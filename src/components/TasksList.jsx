@@ -49,12 +49,12 @@ const TasksList = ({ tasks, deleteTask, sortTasksByStatus, toogleStatus }) => {
                     <input
                         type="checkbox"
                         name="complete"
-                        id="inputCheck"
+                        id="viewComplete"
                         className="form-check-input"
                         checked={viewComplete}
                         onChange={handleViewToggle}
                     />
-                    <label htmlFor="inputCheck">Completadas</label>
+                    <label htmlFor="viewComplete">Completadas</label>
                 </div>
                 {tasks.length === 0 || !pendingTasks && !viewComplete 
                     ? 
